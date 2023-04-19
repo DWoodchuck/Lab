@@ -6,21 +6,22 @@ class Account:
 
 
     def deposit(self,amount):
-        if self.__amount <= 0:
-            False
+        if amount <= 0:
+            return False
         else:
-            self.__account_balance += self.__amount
-            True
+            self.__account_balance += amount
+            return True
+
 
 
 
 
     def withdraw(self,amount):
-        if self.__amount <= 0 or self.__amount > self.__account_balance:
-            False
+        if amount <= 0 or amount > self.__account_balance:
+            return False
         else:
             self.account_balance -= self.__amount
-            True
+            return True
 
     def get_balance(self):
         return self.__account_balance
@@ -28,5 +29,16 @@ class Account:
 
 
     def get_name(self):
-        return name
+        return self.__account_name
+
+
+
+
+
+
+
+
+
+
+
 
