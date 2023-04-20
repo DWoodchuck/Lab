@@ -20,7 +20,7 @@ class Account:
         if amount <= 0 or amount > self.__account_balance:
             return False
         else:
-            self.account_balance -= self.__amount
+            self.__account_balance -= amount
             return True
 
     def get_balance(self):
