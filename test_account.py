@@ -1,6 +1,5 @@
 import pytest
 from account import *
-from pytest import *
 class Test:
     def setup_method(self):
         self.p1 = Account('John')
